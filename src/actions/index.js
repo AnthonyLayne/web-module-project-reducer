@@ -21,3 +21,15 @@ export const changeOperation = (operator) => {
 export const clearDisplay = () => {
   return { type: CLEAR_DISPLAY };
 };
+
+export const memoryAdd = () => {
+  return { type: MEMORY_ADD };
+};
+
+export const memoryApp = () => {
+  return { type: MEMORY_APPLY };
+};
+
+export const memoryClear = () => {
+  return { type: MEMORY_CLEAR };
+};
