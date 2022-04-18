@@ -22,6 +22,26 @@ function App() {
     dispatch(applyNumber(number));
   };
 
+  const handleOperationClick = (operator) => {
+    dispatch(changeOperation(operator));
+  };
+
+  const handleMemAdd = () => {
+    dispatch(memoryAdd());
+  };
+
+  const handleMemApp = () => {
+    dispatch(memoryApp());
+  };
+
+  const handleMemClear = () => {
+    dispatch(memoryClear());
+  };
+
+  const handleClear = () => {
+    dispatch(clearDisplay());
+  };
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
